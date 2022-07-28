@@ -70,7 +70,7 @@ public class ProfileActivationStepDefinition extends ProfileActivationBaseClass{
 		String current_window=driver.getWindowHandle();
 		
     	WebDriverWait wait=explicit_wait();
-		wait.until(ExpectedConditions.visibilityOf(ProfileActivationObjects.activate_account)).getText();
+    //	wait.until(ExpectedConditions.visibilityOf(ProfileActivationObjects.activate_account)).getText();
 		
 		scroll();
 		Thread.sleep(1000);
@@ -115,14 +115,15 @@ public class ProfileActivationStepDefinition extends ProfileActivationBaseClass{
 		stuentLogin(uname,pword);
 		try {
 		activateProfile();
-		screenshot("pass "+uname);
-		driver.close();
+		screenshot("successfully registered "+uname);
+		System.out.println(uname+" profile activated successfully");
+	//	driver.close();
 		}
 		catch(Exception e){
-			screenshot("fail "+uname);
-			driver.close();
-			System.out.println("oops!!!"+uname+" profile already activated");
-			Assert.fail("oops!!!profile already activated");
+			screenshot("already registered "+uname);
+		//	driver.close();
+		//	System.out.println("oops!!!"+uname+" profile already activated");
+			Assert.fail("oops!!! "+uname+" profile already activated");
 		}
 	}
 }

@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jul 28 17:53:59 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>38 seconds (38293 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runner_class.Runnerclass.runScenario()'><b>runScenario</b><br>Test class: Runner_class.Runnerclass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "to activate anna university college student profiles", "Optional[student profile activation]"</td>
+<td><div><pre>java.lang.AssertionError: oops!!! 1AUGSC0601 profile already activated
+	at org.junit.Assert.fail(Assert.java:89)
+	at Stepdefinitions.ProfileActivationStepDefinition.each_student_logs_into_student_login_and_does_payment_to_activate_their_profile(ProfileActivationStepDefinition.java:125)
+	at ?.each student logs into student login with valid &quot;1AUGSC0601&quot; and &quot;9786868186&quot; does payment to activate their profile(file:///C:/Users/Lavanya/git/profile-Activation/adm/featurefile/au.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1263972401", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1263972401'><pre>java.lang.AssertionError: oops!!! 1AUGSC0601 profile already activated
+	at org.junit.Assert.fail(Assert.java:89)
+	at Stepdefinitions.ProfileActivationStepDefinition.each_student_logs_into_student_login_and_does_payment_to_activate_their_profile(ProfileActivationStepDefinition.java:125)
+	at ?.each student logs into student login with valid &quot;1AUGSC0601&quot; and &quot;9786868186&quot; does payment to activate their profile(file:///C:/Users/Lavanya/git/profile-Activation/adm/featurefile/au.feature:4)
+</pre></div></td>
+<td>18</td>
+<td>Runner_class.Runnerclass@7b02881e</td></tr>
+<tr>
+<td title='Runner_class.Runnerclass.runScenario()'><b>runScenario</b><br>Test class: Runner_class.Runnerclass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "to activate anna university college student profiles", "Optional[student profile activation]"</td>
+<td><div><pre>java.lang.AssertionError: oops!!! 1AUGSC0602 profile already activated
+	at org.junit.Assert.fail(Assert.java:89)
+	at Stepdefinitions.ProfileActivationStepDefinition.each_student_logs_into_student_login_and_does_payment_to_activate_their_profile(ProfileActivationStepDefinition.java:125)
+	at ?.each student logs into student login with valid &quot;1AUGSC0602&quot; and &quot;8248728983&quot; does payment to activate their profile(file:///C:/Users/Lavanya/git/profile-Activation/adm/featurefile/au.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace849199636", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace849199636'><pre>java.lang.AssertionError: oops!!! 1AUGSC0602 profile already activated
+	at org.junit.Assert.fail(Assert.java:89)
+	at Stepdefinitions.ProfileActivationStepDefinition.each_student_logs_into_student_login_and_does_payment_to_activate_their_profile(ProfileActivationStepDefinition.java:125)
+	at ?.each student logs into student login with valid &quot;1AUGSC0602&quot; and &quot;8248728983&quot; does payment to activate their profile(file:///C:/Users/Lavanya/git/profile-Activation/adm/featurefile/au.feature:4)
+</pre></div></td>
+<td>16</td>
+<td>Runner_class.Runnerclass@7b02881e</td></tr>
+</table><p>
+</body>
+</html>

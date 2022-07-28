@@ -1,9 +1,9 @@
-@profileActivation
+@kumaraguru
 Feature: student profile activation
-Scenario Outline: to activate 967 student profiles
+Scenario Outline: to activate kumaraguru college student profiles
           Given each student logs into student login with valid "<username>" and "<password>" does payment to activate their profile
-          Examples:
-|   username    |   password    |
+Examples:
+|username|password|
 |	6KECSC0601	|	9786536382	|
 |	6KECSC0602	|	6381241260	|
 |	6KECSC0603	|	8825600349	|
@@ -104,7 +104,3 @@ Scenario Outline: to activate 967 student profiles
 |	6KECSC0698	|	9952033731	|
 |	6KECSC0699	|	9952033732	|
 |	6KECSC0700	|	9952033733	|
-          
-
-
-          
